@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Hammer } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,8 +19,14 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       <div className="container">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-xl font-bold text-primary">
-            Cevik ATS Dekorasyon
+          <Link to="/" className="flex items-center space-x-2">
+            <div className="p-2 text-white rounded-full bg-secondary">
+              <Hammer size={24} />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-primary">CEVIK ATS</span>
+              <span className="text-sm text-text-light">Dekorasyon</span>
+            </div>
           </Link>
 
           {/* Desktop Menu */}
