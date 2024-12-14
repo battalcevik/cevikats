@@ -111,7 +111,7 @@ const Index = () => {
           </h2>
           <div className="flex items-center justify-center mb-8 space-x-4">
             <Phone className="text-secondary" />
-            <span className="text-xl text-white">+90 555 123 4567</span>
+            <span className="text-xl text-white">+90 554 549 11 37</span>
           </div>
           <Link to="/contact" className="btn-primary">
             Ücretsiz Keşif İsteyin
